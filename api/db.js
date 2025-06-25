@@ -10,12 +10,3 @@ export const db=mysql.createConnection({
 db.connect(function (err){
     console.log("tudo certo");
 })
-
-db.query("CALL pdselusuarios()",function(err,row,){
-    if(!err){
-        console.log("Resultado:",row);
-    }
-    else{
-        console.log("erro");
-    }
-})

@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <p>cadastro</p>
+    <link rel="stylesheet" href="css/cadastro.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+<body > 
+    <section>
+     <div class="classformulariocadastro" >
+     <center>
+     <h1 id="idcadastrotitulo">Crie sua conta:</h1>
+     </center>
+     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-white p-3 rounded-2" tabindex="0">
+     <div>
+     <label id="idcadastrolblnome"><strong>Nome:</strong> </label>
+     <input id="idcadastroinputnome" placeholder="digite o seu Nome aqui" type="text">
+     </div>
+     <br>
+     <div>
+     <label id="idcadastrolblemail"><strong>Email:</strong></label>
+     <input id="idcadastroinputemail" placeholder="digite a sua Email aqui" type="text">
+     </div>
+       <br>
+     <div>
+     <label id="idcadastrolblcpf"><strong>CPF:</strong> </label>
+     <input id="idcadastroinputcpf" placeholder="digite o seu CPF aqui" type="text">
+     </div>
+       <br>
+     <div>
+     <label id="idcadastrolbltelefone"><strong>Telefone:</strong></label>
+     <input id="idcadastroinputtelefone" placeholder="digite o seu telefone aqui" type="number">
+     </div>
+       <br>
+     <div>
+     <label id="idcadastrolblgenero"><strong>Genero:</strong> </label>
+     <select  id="idcadastroinputgenero">
+        <option id="idcadastroinputgenero" value="masculino">masculino</option>
+        <option  id="idcadastroinputgenero" value="Feminino">feminino</option>
+        <option  id="idcadastroinputgenero" value="outro">outro</option>
+     </select>
+     </div>
+       <br>
+     <div>
+     <label id="idcadastrolbldtcnascimento"><strong>Data de nascimento:</strong></label>
+     <input id="idcadastroinputdtcnascimento"  type="date">
+     </div>
+       <br>
+      <div>
+     <label id="idcadastrolblsenha"><strong>Senha:</strong></label>
+     <input id="idcadastroinputsenha" placeholder="digite sua senha" type="text">
+     </div>
+       <br>
+      <div>
+     <label id="idcadastrolblconfsenha"><strong>Confirmar senha:</strong></label>
+     <input id="idcadastroinputconfsenha" placeholder=" Por favor confirme sua senha" type="text">
+     </div>
+     <br>
+     <div >
+       <input type="checkbox" id="checknomsocial" onchange="checknomesocial()">gostaria de usar um nome social?
+     </div>
+     <br>
+     <div>
+       <input type="checkbox" id="checkanonimato" onchange="checkanonimato()">gostaria de manter anonimato em suas consultas?
+     </div>
+     <br>
+      <div>
+     <label id="idcadastrolblnomesocial"><strong>Nome Social:</strong></label>
+     <input id="idcadastroinputnomesocial" placeholder="Por favor confirme sua senha" type="text">
+     </div>
+       <br>
+       <center>
+     <div>
+      <button id="idcadastrobtnproximo" onclick="cadastroproximo()">proximo</button> 
+     </div>
+    </center>
+     </div>
+     </center>
+     </div>
+     </section>   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <script src="js/cadastro.js"></script>
 </body>
 </html>

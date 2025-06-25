@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+<body> 
+    <section>
+     <div class="classformulariocadastro" >
+     <center>
+     <h1 id="idcadastrotitulo">Preencha o seu endereço:</h1>
+     </center>
+     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-white p-3 rounded-2" tabindex="0">
+     <div>
+     <label id="idcadastrolblcep"><strong>CEP:</strong></label>
+     <input id="idcadastroinputcep" placeholder="digite o seu cep aqui" onchange="carregacep()" type="number">
+     </div>
+     <br>
+     <div>
+     <label id="idcadastrolblrua"><strong>Rua:</strong> </label>
+     <input id="idcadastroinputrua" placeholder="digite o nome da sua rua aqui" type="text">
+     </div>
+     <br>
+     <div>
+     <label id="idcadastrolblbairro"><strong>Bairro:</strong></label>
+     <input id="idcadastroinputbairro" placeholder="digite o seu bairro aqui" type="text">
+     </div>
+       <br>
+     <div>
+     <label id="idcadastrolblnumero"><strong>Numero:</strong> </label>
+     <input id="idcadastroinputnumero" placeholder="digite o numero da sua rua aqui" type="number">
+     </div>
+       <br>
+     <div>
+     <label id="idcadastrolblcomplemento"><strong>Complemento:</strong></label>
+     <input id="idcadastroinputcomplemento" placeholder="digite o seu complemento aqui" type="text">
+     </div>
+       <br>
+      <div>
+     <label id="idcadastrolblcidade"><strong>Cidade:</strong></label>
+     <input id="idcadastroinputcidade" placeholder="digite o nome da sua cidade" type="text">
+     </div>
+       <br>
+       <center>
+     <div>
+      <button id="idcadastrobtnanterior" onclick="window.location.href='../+amado/cadastro.html'">anterior</button>
+      <button id="idcadastrobtnproximo" onclick="cadastroproximo2()">proximo</button> 
+     </div>
+    </center>
+     </div>
+     </center>
+     </div>
+     </section>   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <script src="js/cadastro.js"></script>
+</body>
+</html>

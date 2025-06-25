@@ -1,0 +1,181 @@
+/* ========== ESTILOS GERAIS ========== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #e9f9fa;
+}
+
+/* ========== CONTAINER DOS PROFISSIONAIS ========== */
+#idprofissionais-container {
+  padding: 40px;
+  background-color: #f0fdfd;
+}
+
+#idprofissionais-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ========== CARD DE PROFISSIONAL ========== */
+.idprofissional-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.idprofissional-card h3 {
+  margin: 0;
+  color: #007b8f;
+}
+
+.idprofissional-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Cartão com foto e infos */
+.idprofissional-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.idprofissional-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007b8f;
+  flex-shrink: 0;
+}
+
+.idprofissional-info {
+  flex: 1;
+}
+
+.idprofissional-card h3 {
+  margin: 0 0 6px 0;
+  color: #007b8f;
+}
+
+.idprofissional-card p {
+  margin: 3px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.idprofissional-card a {
+  color: #007f91;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.idprofissional-card a:hover {
+  text-decoration: underline;
+}
+
+
+/* ========== ESTRUTURA DA PÁGINA ========== */
+#idcontainer {
+  display: flex;
+  height: 100vh;
+}
+
+#idsidebar {
+  width: 220px;
+  background-color: #b4e0e5;
+  padding: 20px;
+  text-align: center;
+}
+
+#idmain {
+  flex: 1;
+  padding: 30px;
+}
+
+/* ========== CARD DE AGENDAMENTO ========== */
+#idcard-agendamento {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#idcard-agendamento h2 {
+  text-align: center;
+  color: #007f91;
+  margin-bottom: 30px;
+}
+
+/* ========== FORMULÁRIO ========== */
+.idform-group {
+  margin-bottom: 20px;
+}
+
+.idform-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.idform-group input,
+.idform-group select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.idform-group input:focus,
+.idform-group select:focus {
+  border-color: #007f91;
+  box-shadow: 0 0 5px rgba(0, 127, 145, 0.2);
+  outline: none;
+}
+
+/* ========== BOTÃO AGENDAR ========== */
+#idbtn-agendar {
+  background-color: #007f91;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+#idbtn-agendar:hover {
+  background-color: #005f6b;
+}
+
+/* ========== BOTÃO VOLTAR ========== */
+#idbtn-voltar {
+  display: inline-block;
+  margin: 20px 0;
+  margin-left: 80px;
+  color: #007f91;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#idbtn-voltar i {
+  margin-right: 8px;
+  vertical-align: middle;
+}

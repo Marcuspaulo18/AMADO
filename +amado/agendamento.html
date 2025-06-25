@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Serviço</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="website icon" type="png" href="imagens/logo.png">
+  <link rel="stylesheet" href="servicos/servicosprofissional.css">
+</head>
+<body>
+
+  <div id="idcontainer">
+    <div id="idsidebar">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Foto" style="border-radius: 50%; width: 80px;">
+      <h3>Paulo Roberto, 20</h3>
+      <p>Bocadas</p>
+      <button disabled>Nenhum serviço agendado</button>
+    </div>
+
+    <div id="idmain">
+      <a id="idbtn-voltar" href="landingpage.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+
+      <div id="idcard-agendamento">
+        <h2>Agendar Serviço</h2>
+        <form>
+          <div class="idform-group">
+            <label for="profissional">Nome do Profissional</label>
+            <input type="text" id="profissional" name="profissional" required>
+          </div>
+
+          <div class="idform-group">
+            <label for="paciente">Nome do Paciente</label>
+            <input type="text" id="paciente" name="paciente" required>
+          </div>
+
+          <div class="idform-group">
+            <label for="local">Local</label>
+            <input type="text" id="local" name="local" required>
+          </div>
+
+          <div class="idform-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+
+          <div class="idform-group">
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required>
+          </div>
+
+          <div class="idform-group">
+            <label for="categoria">Área do Serviço</label>
+            <select id="categoria" name="categoria" required onchange="atualizarSubcategorias()">
+              <option value="">Selecione uma categoria...</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Jurídico">Jurídico</option>
+              <option value="Comunicação">Comunicação</option>
+              <option value="Educação">Educação</option>
+              <option value="Contabilidade">Contabilidade</option>
+              <option value="Relações Internacionais">Relações Internacionais</option>
+            </select>
+          </div>
+
+          <div class="idform-group">
+            <label for="subcategoria">Tipo de Serviço</label>
+            <select id="subcategoria" name="subcategoria" required>
+              <option value="">Selecione uma subcategoria...</option>
+            </select>
+          </div>
+
+          <button type="submit" id="idbtn-agendar">Agendar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const subcategorias = {
+      "Saúde": ["Clínico Geral", "Dentista", "Enfermagem", "Psicologia", "Fisioterapia"],
+      "Jurídico": ["Advocacia Civil", "Advocacia Criminal", "Direito Trabalhista", "Mediação"],
+      "Comunicação": ["Marketing", "Design Gráfico", "Jornalismo", "Publicidade", "Redes Sociais"],
+      "Educação": ["Reforço Escolar", "Idiomas", "Aulas Particulares", "Alfabetização"],
+      "Contabilidade": ["Imposto de Renda", "Abertura de Empresa", "Gestão Fiscal", "Folha de Pagamento"],
+      "Relações Internacionais": ["Tradução", "Consultoria Internacional", "Mediação Cultural", "Relações Diplomáticas"]
+    };
+
+    function atualizarSubcategorias() {
+      const categoriaSelect = document.getElementById("categoria");
+      const subcategoriaSelect = document.getElementById("subcategoria");
+      const categoriaEscolhida = categoriaSelect.value;
+
+      subcategoriaSelect.innerHTML = '<option value="">Selecione uma subcategoria...</option>';
+
+      if (subcategorias[categoriaEscolhida]) {
+        subcategorias[categoriaEscolhida].forEach(sub => {
+          const option = document.createElement("option");
+          option.value = sub;
+          option.text = sub;
+          subcategoriaSelect.appendChild(option);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

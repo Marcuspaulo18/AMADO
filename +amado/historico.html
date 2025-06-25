@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico de Serviços</title>
+  <link rel="stylesheet" href="css/servicos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="website icon" type="image/png" href="imagens/logo.png" />
+</head>
+<body>
+  <div id="idhistorico-container">
+    <a id="idbtn-voltar" href="landingpage.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+    
+    <h1>Histórico de Serviços</h1>
+
+    <div id="idhistorico-controls">
+      <input type="text" id="idfiltro" placeholder="Filtrar por profissional, tipo ou paciente" onkeyup="filtrarTabela()">
+    </div>
+
+    <table id="idhistorico-tabela">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Profissional</th>
+          <th>Modalidade</th>
+          <th>Tipo de Serviço</th>
+          <th>Paciente</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>20/05/2025</td>
+          <td>10:30</td>
+          <td>Dra. Ana Oliveira</td>
+          <td>Presencial</td>
+          <td>Saúde</td>
+          <td>Paulo Roberto</td>
+        </tr>
+        <tr>
+          <td>15/05/2025</td>
+          <td>14:00</td>
+          <td>Dr. Ricardo Santos</td>
+          <td>Online</td>
+          <td>Jurídico</td>
+          <td>Paulo Roberto</td>
+        </tr>
+        <tr>
+          <td>10/05/2025</td>
+          <td>09:00</td>
+          <td>Camila Rocha</td>
+          <td>Online</td>
+          <td>Comunicação</td>
+          <td>Paulo Roberto</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function filtrarTabela() {
+      const input = document.getElementById("idfiltro").value.toLowerCase();
+      const linhas = document.querySelectorAll("#idhistorico-tabela tbody tr");
+      linhas.forEach(linha => {
+        const texto = linha.innerText.toLowerCase();
+        linha.style.display = texto.includes(input) ? "" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
