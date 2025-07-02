@@ -10,46 +10,50 @@
 </head>
 <body>
 
-<h1>Serviços Disponíveis</h1>
-<a id="idbtn-voltar" href="landingpage.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+  <h1>Serviços Disponíveis</h1>
+  <a id="idbtn-voltar" href="landingpage.html"><i class="fas fa-arrow-left"></i> Voltar</a>
 
-<div id="idservicos-container">
-  <a href="servicos/saude.html" class="idservico-card">
-    <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-    <h3>Saúde</h3>
-    <p>Atendimento médico e suporte para prevenção, diagnóstico e tratamento de doenças.</p>
-  </a>
+  <div id="idservicos-container">
 
-  <a href="servicos/juridico.html" class="idservico-card">
-    <svg viewBox="0 0 24 24"><path d="M5 4v3h5V4H5zm0 5v3h5V9H5zm0 5v3h5v-3H5zm9-10v14h2V4h-2zm4 0v14h2V4h-2z"/></svg>
-    <h3>Jurídico</h3>
-    <p>Assistência jurídica para causas civis, criminais e consultoria legal personalizada.</p>
-  </a>
+    <a href="profissionais.html" class="idservico-card" onclick="selecionarServico('saude')">
+      <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      <h3>Saúde</h3>
+      <p>Atendimento médico e suporte para prevenção, diagnóstico e tratamento de doenças.</p>
+    </a>
 
-  <a href="servicos/comunicacao.html" class="idservico-card">
-    <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 4h10v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h16v2H4z"/></svg>
-    <h3>Comunicação</h3>
-    <p>Serviços de assessoria de imprensa, marketing, mídias sociais e produção de conteúdo.</p>
-  </a>
+    <a href="profissionais.html" class="idservico-card" onclick="selecionarServico('juridico')">
+      <svg viewBox="0 0 24 24"><path d="M5 4v3h5V4H5zm0 5v3h5V9H5zm0 5v3h5v-3H5zm9-10v14h2V4h-2zm4 0v14h2V4h-2z"/></svg>
+      <h3>Jurídico</h3>
+      <p>Assistência jurídica para causas civis, criminais e consultoria legal personalizada.</p>
+    </a>
 
-  <a href="servicos/educacao.html" class="idservico-card">
-    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
-    <h3>Educação</h3>
-    <p>Ofertas de cursos, mentorias, reforço escolar e programas de formação continuada.</p>
-  </a>
+    <a href="profissionais.html" class="idservico-card" onclick="selecionarServico('comunicacao')">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 4h10v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h16v2H4z"/></svg>
+      <h3>Comunicação</h3>
+      <p>Assessoria de imprensa, marketing, mídias sociais e produção de conteúdo.</p>
+    </a>
 
-  <a href="servicos/contabilidade.html" class="idservico-card">
-    <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3zm0 4h12v2H3zm0 4h18v2H3zm0 4h12v2H3zm0 4h18v2H3z"/></svg>
-    <h3>Contabilidade</h3>
-    <p>Consultoria contábil, gestão fiscal, declaração de imposto de renda e serviços financeiros.</p>
-  </a>
+    <a href="profissionais.html" class="idservico-card" onclick="selecionarServico('educacao')">
+      <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+      <h3>Educação</h3>
+      <p>Cursos, mentorias, reforço escolar e programas de formação continuada.</p>
+    </a>
 
-  <a href="servicos/relacoes internacionais.html" class="idservico-card">
-    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
-    <h3>Relações Internacionais</h3>
-    <p>Mediação diplomática, negociações internacionais e suporte em acordos globais.</p>
-  </a>
-</div>
+    <a href="profissionais.html" class="idservico-card" onclick="selecionarServico('contabilidade')">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3zm0 4h12v2H3zm0 4h18v2H3zm0 4h12v2H3zm0 4h18v2H3z"/></svg>
+      <h3>Contabilidade</h3>
+      <p>Consultoria contábil, gestão fiscal, declaração de IR e serviços financeiros.</p>
+    </a>
+
+    <a href="profissionais.html" class="idservico-card" onclick="selecionarServico('relacoes')">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
+      <h3>Relações Internacionais</h3>
+      <p>Mediação diplomática, negociações e suporte em acordos globais.</p>
+    </a>
+
+  </div>
+
+  <script src="/+amado/js/servicos.js"></script>
 
 </body>
 </html>

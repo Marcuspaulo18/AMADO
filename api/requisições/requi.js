@@ -100,3 +100,41 @@ export const verifilogin = (req,res)=>{
         return res.status(500).json({ error: "Erro interno do servidor." });
     }
 }
+
+export const buscarAgendamentos = (req, res) => {
+    const { idusuario } = req.params;
+
+    const q = "CALL spdvisualizaagendamento(?)";
+    db.query(q, [idusuario], (err, results) => {
+        if (err) {
+            console.error("Erro ao buscar agendamentos:", err);
+            return res.status(500).json({ error: "Erro ao buscar agendamentos" });
+        }
+
+        const dados = results[0];
+        return res.status(200).json({ agendamentos: dados });
+    });
+};
+
+export const buscarProfissionaisPorTipo = (req, res) => {
+  const tipo = req.params.tipo;
+
+  const q = `
+    SELECT u.nome, u.email, u.telefone,
+           p.conselho, p.area_atua, p.registro,
+           p.atende_online, p.atende_presencial,
+           p.bio, p.tipo_atendimento
+    FROM profissional p
+    JOIN usuario u ON u.ideusuario = p.ideusuario
+    WHERE p.tipo_atendimento = ?
+  `;
+
+  db.query(q, [tipo], (err, results) => {
+    if (err) {
+      console.error("Erro ao buscar profissionais:", err);
+      return res.status(500).json({ error: "Erro no servidor" });
+    }
+
+    return res.status(200).json(results); // Aqui já vem como array direto
+  });
+};
