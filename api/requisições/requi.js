@@ -73,7 +73,7 @@ export const verifilogin = (req,res)=>{
             return res.status(400).json({ error: "Email e senha são obrigatórios." });
         }
 
-        const q = "CALL splogusuario(?,?,?)";
+        const q = "CALL sp_login_usuario(?,?,?)";
         const values = [email, senha, '1']; 
         
         db.query(q, values, (err, results) => {
