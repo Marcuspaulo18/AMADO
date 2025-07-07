@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Serviço</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="website icon" type="png" href="imagens/logo.png">
+  <link rel="stylesheet" href="css/servicosprofissional.css">
+</head>
+<body>
+
+  <div id="idcontainer">
+    <div id="idsidebar">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Foto" style="border-radius: 50%; width: 80px;">
+      <h2 id="nomeIdade"></h2>
+    </div>
+
+    <div id="idmain">
+      <a id="idbtn-voltar" href="landingpage.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+
+      <div id="idcard-agendamento">
+        <h2>Agendar Serviço</h2>
+        <form>
+          <div class="idform-group">
+            <label for="categoria">Área do Serviço</label>
+            <select id="idselectcategoria" name="categoria" required onchange="atualizarSubcategorias()">
+              <option value="">Selecione uma categoria...</option>
+              <option value="Saude">Saúde</option>
+              <option value="Juridico">Jurídico</option>
+              <option value="Comunicacao">Comunicação</option>
+              <option value="Educacao">Educação</option>
+              <option value="Contabilidade">Contabilidade</option>
+              <option value="Relacoes">Relações Internacionais</option>
+            </select>
+          </div>
+
+          <div class="idform-group">
+            <label for="subcategoria">Tipo de Serviço</label>
+            <select id="idselectsubcategoria" name="subcategoria" required onchange="selprofissionais()">
+              <option value="">Selecione uma subcategoria...</option>
+            </select>
+          </div>
+
+          <div class="idform-group">
+            <label for="profissional">Nome do Profissional</label>
+             <select id="idselectprofissional" name="profissional" required onchange="seldatahoraconsulta()">
+              <option value="">Selecione um profissional...</option>
+            </select>
+          </div>
+
+          <div class="idform-group">
+            <label for="local">Local</label>
+             <select id="idselectlocal" name="local">
+              <option value="">Selecione um Local...</option>
+              <option value="Avenida Luís Viana , 6775, Salvador">Avenida Luís Viana (Paralela), 6775, Salvador</option>
+              <option value="Rua Miguel Calmon, 22, Comércio, Salvador"> Rua Miguel Calmon, 22, Comércio, Salvador</option>
+            </select>
+          </div>
+
+          <div class="idform-group">
+            <label for="data">Data</label>
+           <select id="idselectdata" name="data">
+              <option value="">Selecione uma data...</option>
+            </select>
+          </div>
+
+          <div class="idform-group">
+            <label for="hora">Hora</label>
+            <select id="idselecthora" name="categoria" required>
+              <option value="">Selecione um horario...</option>
+              </select>
+          </div>
+
+           <div class="idform-group">
+            <label for="nota">Observações</label>
+            <input type="text" name="nota" id="idinputnota" placeholder="observações para o profissional na consulta">
+          </div>
+
+          <button type="submit" id="idbtn-agendar" onclick="inseriragendamento()">Agendar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/Agendamento.js">
+  </script>
+</body>
+</html>

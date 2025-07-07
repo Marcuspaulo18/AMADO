@@ -1,0 +1,288 @@
+.idavaliacoes-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.idavaliacoes-card h3 {
+  margin: 0;
+  color: #007b8f;
+}
+
+.idavaliacoes-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Cartão com foto e infos */
+.idavaliacoes-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.idavaliacoes-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007b8f;
+  flex-shrink: 0;
+}
+
+.idavaliacoes-info {
+  flex: 1;
+}
+
+.idavaliacoes-card h3 {
+  margin: 0 0 6px 0;
+  color: #007b8f;
+}
+
+.idavaliacoes-card p {
+  margin: 3px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.idavaliacoes-card a {
+  color: #007f91;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.idavaliacoes-card a:hover {
+  text-decoration: underline;
+}
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0fdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== CABEÇALHO ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background-color: #f0fdfd;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #007b8f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#btn-login {
+  background-color: #007b8f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn-login:hover {
+  background-color: #005f6b;
+  transform: scale(1.05);
+}
+
+/* ========== SEÇÕES EM SLIDE ========== */
+section, .cartao-slide {
+  min-height: 100vh;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.6s ease-in-out;
+}
+
+/* ========== CARTÕES INTERATIVOS ========== */
+.cartao-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cartao {
+  width: 230px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.cartao i {
+  font-size: 40px;
+  color: #007b8f;
+  margin-bottom: 15px;
+}
+
+.cartao h2 {
+  font-size: 20px;
+  color: #007b8f;
+  margin-bottom: 10px;
+}
+
+.cartao .descricao {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 15px;
+  color: #444;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.cartao:hover .descricao {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+/* ========== MISSÃO ========== */
+#sec-missao {
+  background-image: url('../imagens/homefundo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 30px;
+  text-align: center;
+  color: #003f4f;
+  background-blend-mode: overlay;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  margin: 60px 80px;
+}
+
+#sec-missao h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #007b8f;
+}
+
+#sec-missao p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ========== CONVITE A PROFISSIONAIS ========== */
+#convite-profissionais {
+  background-color: #e6f9f9;
+  border-left: 6px solid #007b8f;
+  padding: 50px 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#convite-profissionais h3 {
+  color: #007b8f;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+#convite-profissionais p {
+  font-size: 17px;
+  color: #444;
+}
+
+/* ========== CONTATO ========== */
+#sec-contato {
+  background-image: url('../imagens/contatofundo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 40px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#sec-contato h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#sec-contato p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px;
+  }
+
+  .cartao-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartao {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  #sec-missao,
+  #convite-profissionais,
+  #sec-contato {
+    margin: 40px 20px;
+    padding: 60px 20px;
+  }
+
+  #btn-login {
+    width: 100%;
+    max-width: 200px;
+  }
+}

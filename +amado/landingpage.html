@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/landingpage.css" />
+  <link rel="website icon" type="image/png" href="imagens/logo.png" />
+  <title>Minha Página</title>
+</head>
+<body>
+
+<div id="idagendamento-container">
+  <!-- Sidebar -->
+  <aside id="idagendamento-sidebar">
+    <div>
+      <div class="logo">EU<a id="idbtn-voltar" href="boasvindas.html"><i class="fas fa-arrow-left"></i> Sair</a></div>
+      <div class="profile-card">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Foto de Perfil" />
+        <h2 id="nomeIdade"></h2>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main id="idagendamento-main">
+    <div class="categorias" style="background: url('imagens/loginfundo.png') center/cover no-repeat;">
+      <h2>+CATEGORIA DE SERVIÇOS</h2>
+      <p>Conheça alguns dos serviços mais procurados pela nossa comunidade.</p>
+
+      <div class="botoes-grid">
+        <div class="botao-card" onclick="window.location.href='servicos.html'">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+          <h3>Serviços</h3>
+        </div>
+        <div class="botao-card" onclick="window.location.href='servicosagendados.html'">
+          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+          <h3>Serviços Agendados</h3>
+        </div>
+        <div class="botao-card" onclick="window.location.href='agendamento.html'">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5.33 1.28 6.69 3.5H5.31C6.67 13.28 9.3 12 12 12zm0-2c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+          <h3>Agendar Serviço</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../+amado/js/landingpage.js"></script>
+
+</body>
+</html>

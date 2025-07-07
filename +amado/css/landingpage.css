@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eaf7f8;
+}
+
+#idagendamento-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+#idagendamento-sidebar {
+  background-color: #b8e3e8;
+  width: 260px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#idagendamento-sidebar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007b8f;
+  margin-bottom: 20px;
+}
+
+#idagendamento-sidebar .profile-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#idagendamento-sidebar .profile-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#idagendamento-sidebar .servico-agendado {
+  margin-top: 10px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#idagendamento-sidebar .editar {
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #007b8f;
+  font-weight: bold;
+}
+
+#idagendamento-main {
+  flex: 1;
+  padding: 40px;
+}
+
+.categorias {
+  background: url('imagens/loginfundo.png') center/cover no-repeat;
+  padding: 60px 40px;
+  border-radius: 12px;
+  color: #01222e;
+}
+
+.categorias h2 {
+  color: #007b8f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.botoes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.botao-card {
+  flex: 1 1 200px;
+  max-width: 220px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.botao-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.botao-card svg {
+  width: 40px;
+  height: 40px;
+  fill: #007b8f;
+  margin-bottom: 10px;
+}
+
+.botao-card h3 {
+  color: #007b8f;
+  margin: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  #idagendamento-container {
+    flex-direction: column;
+  }
+
+  #idagendamento-sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #idagendamento-main {
+    padding: 20px;
+  }
+}
+
+/* ========== BOTÃO VOLTAR ========== */
+#idbtn-voltar {
+  display: inline-block;
+  margin: 20px;
+  margin-left: 120px;
+  color: #007f91;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#idbtn-voltar i {
+  margin-right: 8px;
+  vertical-align: middle;
+}

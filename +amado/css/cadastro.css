@@ -1,0 +1,366 @@
+body{
+background:url('../imagens/cadastrofundo.png');
+background-size:contain;
+color: black;
+font-family: 'League Spartan';
+font-weight: 200;
+font-size: x-large;
+align-items: center;
+align-self: center;
+align-content: center;
+}
+
+@media (max-width:768px) {
+body{
+background-size:cover;
+font-size: larger;
+padding: 10px;
+}
+}
+
+@media (min-width:769px) {
+body{
+background-size:cover;
+font-size: larger;
+padding: 20px;
+}
+}
+.classformulariocadastro{
+margin: auto;
+align-items: center;
+align-self: center;
+align-content: center;
+background-color: white;
+color: black;
+font-family: 'League Spartan';
+font-weight: 200;
+font-size: x-large;
+width: 600px;
+height: 600px;
+border: 3px solid white;
+border-radius: 8px;
+padding: 10px;
+overflow-y: scroll;
+}
+
+#idcadastrotitulo{
+color:#409292;
+font-size: 40px;
+font-weight: bold;
+}
+
+#idcadastrolblemail{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+
+#idcadastrolblnome{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+padding-right: 300px;
+font-weight: bold;
+}
+
+#idcadastrolblnomesocial{
+visibility: hidden;
+color:#409292;
+font-size: 30px;
+font-style:bold;
+padding-right: 300px;
+font-weight: bold;
+}
+
+#idcadastrolblcpf{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+
+#idcadastrolbldtcnascimento{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+padding-right: 200px;
+font-weight: bold;
+}
+
+#idcadastrolblsenha{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+
+#idcadastrolblconfsenha{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+
+#idcadastrolblgenero{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+padding-right: 300px;
+font-weight: bold;
+}
+#idcadastrolbltelefone{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+
+#idcadastrolblrua{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+#idcadastrolblnumero{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+#idcadastrolblcomplemento{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+#idcadastrolblcep{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+#idcadastrolblcidade{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+#idcadastrolblbairro{
+color:#409292;
+font-size: 30px;
+font-style:bold;
+font-weight: bold;
+}
+
+#idcadastroinputemail{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputrua{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputbairro{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputnumero{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputcomplemento{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputcep{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputcidade{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputemail{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputsenha{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputnome{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputnomesocial{
+visibility: hidden;
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputcpf{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputtelefone{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputgenero{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputdtcnascimento{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastroinputconfsenha{
+color:black;
+font-size: 20px;
+background-color: #e6e1e1;
+border: 3px solid #e6e1e1;
+border-radius: 10px;
+width: 550px;
+height: 50px;
+}
+
+#idcadastrolblcadastro{
+color:#409292;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+.idcadastrop{
+color:#409292;
+font-size: 20px;
+font-weight: bold;
+background-color: #e6e1e1;
+width: 400px;
+height: 30px;
+border-radius: 5px;
+padding-left: 5px;
+}
+
+
+#idcadastrobtnproximo{
+background-color:#51b6b6;
+color: white;
+border: 3px solid #51b6b6;
+border-radius: 10px;
+font-size: 30px;
+width: 200px;
+height:50px ;
+}
+
+#idcadastrobtnproximo:hover{
+    background-color: white;
+    color:#51b6b6;
+    border: 3px solid white;
+}
+
+#idcadastrobtnanterior{
+background-color:#51b6b6;
+color: white;
+border: 3px solid #51b6b6;
+border-radius: 10px;
+font-size: 30px;
+width: 200px;
+height:50px ;
+}
+
+#idcadastrobtnanterior:hover{
+    background-color: white;
+    color:#51b6b6;
+    border: 3px solid white;
+}

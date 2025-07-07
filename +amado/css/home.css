@@ -1,0 +1,75 @@
+body{
+background:url('../imagens/homefundo.png');
+background-size:cover;
+color: black;
+font-family: 'League Spartan';
+font-weight: 200;
+font-size: x-large;
+}
+
+@media (max-width:768px) {
+body{
+background-size:cover;
+font-size: larger;
+padding: 10px;
+}
+}
+
+@media (min-width:769px) {
+body{
+background-size:cover;
+font-size: larger;
+padding: 20px;
+}
+}
+
+#idhometitulo{
+color:#409292;
+font-size: 30px;
+}
+
+#idhomesubtitulo{
+color:#51b6b6;
+font-size: 40px;
+}
+
+#idhomesubtitulo2{
+color:#51b6b6;
+font-size: 40px;
+}
+
+#idhomerodape{
+color:black;
+font-weight: 400px;
+font-size: 35px;
+}
+
+#idhomebtncadastro{
+background-color:#51b6b6;
+color: white;
+border: 3px solid #51b6b6;
+border-radius: 10px;
+font-size: 30px;
+width: 200px;
+height:50px ;
+}
+#idhomebtncadastro:hover{
+    background-color: white;
+    color:#51b6b6;
+    border: 3px solid white;
+}
+#idhomebtnlogin{
+background-color:#51b6b6;
+color: white;
+border: 3px solid #51b6b6;
+border-radius: 10px;
+font-size: 30px;
+width: 200px;
+height:50px ;
+}
+
+#idhomebtnlogin:hover{
+    background-color: white;
+    color:#51b6b6;
+    border: 3px solid white;
+}

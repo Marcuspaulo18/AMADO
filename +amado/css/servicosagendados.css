@@ -1,0 +1,100 @@
+/* ========== RESET ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== ESTILO GERAL ========== */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f0fdfd;
+  color: #333;
+  padding: 40px 20px;
+}
+
+/* ========== TÍTULO DA PÁGINA ========== */
+#idtitulo-agendados {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #007b8f;
+  margin-bottom: 40px;
+}
+
+/* ========== CONTAINER DE SERVIÇOS ========== */
+#idcontainer-agendados {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+/* ========== CARD DE SERVIÇO ========== */
+.idcard-servico {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.idservico-info h3 {
+  color: #007b8f;
+  margin-bottom: 10px;
+}
+
+.idservico-info p {
+  margin: 4px 0;
+  color: #444;
+}
+
+/* ========== BOTÃO CANCELAR ========== */
+.idbtn-cancelar {
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.idbtn-cancelar:hover {
+  background-color: #e14444;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 600px) {
+  .idcard-servico {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .idbtn-cancelar {
+    align-self: flex-end;
+    width: 100%;
+  }
+}
+
+/* ========== BOTÃO VOLTAR ========== */
+#idbtn-voltar {
+  display: inline-block;
+  margin: 20px 0;
+  margin-left: 80px;
+  color: #007f91;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#idbtn-voltar i {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
